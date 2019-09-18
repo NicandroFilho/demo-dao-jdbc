@@ -1,10 +1,12 @@
 package application;
 
+import db.DB;
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
+import java.util.Date;
 import java.util.List;
 
 public class Program {
@@ -18,7 +20,7 @@ public class Program {
         System.out.println();
 
         System.out.println("==== TEST 2: Seller findByDepartment Department Object as Parameter ====");
-        Department dep = new Department(2, null);
+        Department dep = new Department(4, null);
         List<Seller> list = sellerDao.findByDepartment(dep);
         for(Seller  obj : list){
             System.out.println(obj);
@@ -39,5 +41,14 @@ public class Program {
         for(Seller  obj : list){
             System.out.println(obj);
         }
+
+        System.out.println();
+
+        System.out.println("==== TEST 5: Seller insert ====");
+        Seller newSeller = new Seller(null, "Dorian Gray", "dorian@gmail.com", new Date(), 1234.50, dep);
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! New Id: "+ newSeller.getId());
+
+        DB.closeConnection();
     }
 }
