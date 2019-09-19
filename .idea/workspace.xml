@@ -4,7 +4,6 @@
     <list default="true" id="8c4bdc45-cbe1-4453-93ec-fb0e605fea7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/TestesDepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/TestesDepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/impl/DepartmentDaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/impl/DepartmentDaoJDBC.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
