@@ -37,6 +37,15 @@ public class TestesDepartmentDao {
         departmentDao.deleteById(id);
         System.out.println();
 
+        System.out.println("TEST 5: Department Update");
+        System.out.println("Updating Department "+ dep.getName());
+        System.out.print("Enter new Department Name: ");
+        String newName = sc.nextLine();
+        dep.setName(newName);
+        departmentDao.update(dep);
+        System.out.println("Retrieving new Data from DataBase:");
+        System.out.println(departmentDao.findById(dep.getId()));
+        System.out.println();
 
         DB.closeConnection();
         sc.close();
