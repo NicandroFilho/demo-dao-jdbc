@@ -31,6 +31,12 @@ public class TestesDepartmentDao {
         System.out.println("New Department Created! Department Id: " + dep.getId());
         System.out.println();
 
+        System.out.println("TEST 4: Department Delete");
+        System.out.print("Enter the Id to be Deleted: ");
+        int id = sc.nextInt();
+        departmentDao.deleteById(id);
+        System.out.println();
+
 
         DB.closeConnection();
         sc.close();
